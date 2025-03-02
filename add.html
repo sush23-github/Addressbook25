@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contact - Address Book</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/address-book-logo.svg" alt="Address Book Logo" class="logo-img">
+            <h2>Address Book</h2>
+        </div>
+        <div class="nav-buttons">
+            <a href="index.html" class="btn">Home</a>
+            <a href="add.html" class="btn">Add</a>
+            <a href="view.html" class="btn">View</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Add New Contact</h2>
+            <form id="addContactForm">
+                <div class="profile-pic-container">
+                    <img src="images/default-avatar.png" alt="Profile Preview" class="profile-pic-preview" id="profilePreview">
+                    <input type="file" id="profilePic" name="profilePic" class="profile-pic-input" accept="image/*">
+                    <label for="profilePic" class="profile-pic-label">Choose Profile Picture</label>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="reset" class="btn">Clear</button>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>copyright@2024 addressbook.com</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Contacts - Address Book</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/address-book-logo.svg" alt="Address Book Logo" class="logo-img">
+            <h2>Address Book</h2>
+        </div>
+        <div class="nav-buttons">
+            <a href="index.html" class="btn">Home</a>
+            <a href="add.html" class="btn">Add</a>
+            <a href="view.html" class="btn">View</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="table-container">
+            <h2>Contact List</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by name, email, or phone..." class="search-input">
+                <select id="searchType" class="search-select">
+                    <option value="all">All</option>
+                    <option value="name">Name</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </div>
+            <table id="contactList">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="contactTableBody">
+                    <!-- Contact rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>copyright@2024 addressbook.com</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html> 
